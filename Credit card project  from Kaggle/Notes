@@ -1,0 +1,12 @@
+# Note of fraud project
+## Data Processing
+### Q: Unbalanced numbers
+- Oversampling the Minority Class
+    1. Duplicate existing samples (simple but may lead to overfitting).
+    2. Use techniques like SMOTE (Synthetic Minority Oversampling Technique) to generate synthetic samples based on feature space similarities.
+- Undersampling the Majority Class: Reduce the number of samples in the overrepresented class.
+    1. Randomly remove samples from the majority class (simple but may discard useful data).
+    2. Use informed methods like Tomek Links or Cluster Centroids to remove redundant majority samples.
+- Class weighting
+    1. Adjust the class weights in  ML algorithm to penalize misclassifications of the minority class more heavily. 
+    2. Many algorithms (Logistic Regression, Random Forest, SVM, or neural networks) allow  to set class weights. 
